@@ -97,3 +97,46 @@ footer div {
   width: 40px;
   height: 40px;
 }
+/* ======================= início de formatação home =====================*/
+h2 {
+  font-family: "Corbel";
+  font-size: 20pt;
+  border-bottom: 1px burlywood;
+  margin: 50px;
+}
+main p {
+  /*Acrescentar espaço para margem*/
+  margin: 10px;
+  width: 80%;
+  /*Para alinar um objeto ao centro você pode usar margin-left & margin-right auto para os dois*/
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  font-family: "Corbel";
+  font-size: 12pt; /*Tamanho da letra*/
+  /*Espaçamento entre linhas com o comando line-height*/
+  line-height: 30px;
+}
+/* ============================== Fim da Home ============================ */
+
+#imghome {
+  /*Alinhar imagens ao centro*/
+  text-align: center;
+}
+
+#imghome img {
+  width: 450px; /*largura da imagem*/
+  height: 350px; /*altura da imagem*/
+  border-radius: 250px; /*Arredondar os cantos das imagens*/
+  opacity: 0.7; /*Opacidade da imagem (nesse caso, 70%)*/
+  margin: 20px;
+  /* efeito de transição, isso fará com que a imagem tenha uma animação ao passar o ponteiro do mouse sobre ela */
+  transition: ease 1s;
+}
+#imghome img:hover {
+  opacity: 1; /*Totalmente visível*/
+  /*width: 500px;
+  height: 500px;*/
+  transform: scale(1.2); /*Este aumenta o tamanho para 20% acima do original*/
+  transform: rotate(360deg); /*girar a imagem em 360º*/
+}
