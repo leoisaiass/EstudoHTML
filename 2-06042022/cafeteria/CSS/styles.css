@@ -140,3 +140,16 @@ main p {
   transform: scale(1.2); /*Este aumenta o tamanho para 20% acima do original*/
   transform: rotate(360deg); /*girar a imagem em 360º*/
 }
+
+#videohistoria {
+  width: 80px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#videohistoria iframe {
+  width: 360px;
+  height: 240px;
+  margin-top: 20;
+  margin-bottom: 20px;
+}
