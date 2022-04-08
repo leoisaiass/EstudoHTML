@@ -17,7 +17,7 @@ header {
   height: 300px; /*Aplicar altura ao cabeçalho*/
   background-image: url(../img/Cafezinho.jpg); /*Aplicar imagem de fundo ao cabeçalho */
   background-size: 100% cover; /*Ajustar o tamanho da imagem de fundo*/
-  background-position-y: -3500px; /*Alterar a posicão vertical da imagem (quando negativa, ela está subindo)*/
+  background-position-y: -3000px; /*Alterar a posicão vertical da imagem (quando negativa, ela está subindo)*/
   padding-top: 100px;
   text-align: center;
 }
