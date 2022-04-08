@@ -15,18 +15,18 @@ e aplicar margem externa ou interna zero(0) e realizar o ajuste das caixas em ht
 
 header {
   height: 300px; /*Aplicar altura ao cabeçalho*/
-  background-image: url(../img/Cafezinho.jpg); /*Aplicar imagem de fundo ao cabeçalho */
-  background-size: 100% cover; /*Ajustar o tamanho da imagem de fundo*/
-  background-position-y: -3000px; /*Alterar a posicão vertical da imagem (quando negativa, ela está subindo)*/
+  background-image: url(../img/cafe_leo.jpg); /*Aplicar imagem de fundo ao cabeçalho */
+  background-size: 50%; /*Ajustar o tamanho da imagem de fundo*/
+  background-position-y: -130px; /*Alterar a posicão vertical da imagem (quando negativa, ela está subindo)*/
   padding-top: 100px;
   text-align: center;
 }
 
 h1 {
-  font-family: "Cooper Black";
+  font-family: "Candara";
   font-size: 30pt;
-  color: pink;
-  text-shadow: 4px 4px 5px firebrick;
+  color: chocolate;
+  text-shadow: 4px 4px 5px rgb(248, 205, 174);
   /* Aplicar sombra:
        - Primeiro elemento é a posição horizontal da sombra;
        - Segundo elemento é a posição vertical da sombra; 
@@ -36,7 +36,7 @@ h1 {
 }
 
 nav {
-  background-color: plum;
+  background-color: burlywood;
   padding: 10px;
   text-align: center;
 }
@@ -46,7 +46,97 @@ nav ul li {
 }
 
 nav ul li a {
-  color: wheat;
-  font-family: "Congenial Black";
+  color: black;
+  font-family: "Candara";
   text-decoration: none; /*Tirar sublinhado*/
+}
+
+main {
+  padding: 20px;
+}
+
+footer {
+  background-color: rgb(255, 237, 167);
+  display: flex; /*Permitir com que o rodapé fique com o seu conteúdo flexível*/
+  flex-direction: row; /*Dispor o conteúdo em linha*/
+  /*Ajustar o conteúdo ao centro*/
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+}
+
+footer div {
+  /*border: 1px solid indianred;*/
+  margin: 10px;
+}
+
+#endereco {
+  font-family: "Candara";
+  font-size: 12pt;
+  color: rosybrown;
+  width: 300px;
+  text-align: center;
+}
+
+#redes {
+  position: absolute;
+  right: 50px;
+}
+#redes ul {
+  list-style: none; /*Retirar as bolinhas de marcação*/
+}
+
+/*Vamos dispor as imagens das redes em linha com display inline-block*/
+#redes ul li {
+  display: inline-block;
+  margin: 10px;
+}
+
+/*Alterar comprimento e largura*/
+#redes ul li a img {
+  width: 40px;
+  height: 40px;
+}
+/* ======================= início de formatação home =====================*/
+h2 {
+  font-family: "Corbel";
+  font-size: 20pt;
+  border-bottom: 1px burlywood;
+  margin: 50px;
+}
+main p {
+  /*Acrescentar espaço para margem*/
+  margin: 10px;
+  width: 80%;
+  /*Para alinar um objeto ao centro você pode usar margin-left & margin-right auto para os dois*/
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  font-family: "Corbel";
+  font-size: 12pt; /*Tamanho da letra*/
+  /*Espaçamento entre linhas com o comando line-height*/
+  line-height: 30px;
+}
+/* ============================== Fim da Home ============================ */
+
+#imghome {
+  /*Alinhar imagens ao centro*/
+  text-align: center;
+}
+
+#imghome img {
+  width: 450px; /*largura da imagem*/
+  height: 350px; /*altura da imagem*/
+  border-radius: 250px; /*Arredondar os cantos das imagens*/
+  opacity: 0.7; /*Opacidade da imagem (nesse caso, 70%)*/
+  margin: 20px;
+  /* efeito de transição, isso fará com que a imagem tenha uma animação ao passar o ponteiro do mouse sobre ela */
+  transition: ease 1s;
+}
+#imghome img:hover {
+  opacity: 1; /*Totalmente visível*/
+  /*width: 500px;
+  height: 500px;*/
+  transform: scale(1.2); /*Este aumenta o tamanho para 20% acima do original*/
+  transform: rotate(360deg); /*girar a imagem em 360º*/
 }
