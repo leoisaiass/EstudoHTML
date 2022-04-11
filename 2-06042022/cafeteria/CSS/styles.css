@@ -40,6 +40,7 @@ nav {
   padding: 10px;
   text-align: center;
 }
+
 nav ul li {
   display: inline-block; /* Dispor elementos em linha */
   margin: 5px; /*Espaçso em links*/
@@ -98,6 +99,7 @@ footer div {
   width: 40px;
   height: 40px;
 }
+
 /* ======================= início de formatação home =====================*/
 h2 {
   font-family: "Corbel";
@@ -105,6 +107,7 @@ h2 {
   border-bottom: 1px burlywood;
   margin: 50px;
 }
+
 main p {
   /*Acrescentar espaço para margem*/
   margin: 10px;
@@ -133,9 +136,10 @@ main p {
   /* efeito de transição, isso fará com que a imagem tenha uma animação ao passar o ponteiro do mouse sobre ela */
   transition: ease 1s;
 }
+
 #imghome img:hover {
   opacity: 1; /*Totalmente visível*/
-  /*width: 500px;
+  /*width: 500px; 
   height: 500px;*/
   transform: scale(1.2); /*Este aumenta o tamanho para 20% acima do original*/
   transform: rotate(360deg); /*girar a imagem em 360º*/
@@ -251,3 +255,54 @@ h6 {
   height: 500px;
 }
 /* ==================== Fim do estilo do mapa ==================== */
+
+/* =================== Início do estilo contato ================== */
+main form {
+  width: 40%;
+  border: 1px solid burlywood;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  box-shadow: 5px /*X*/ 5px /*Y*/ 2px /*Efeito esfumaçado*/
+    rgba(222, 184, 135, 0.719);
+}
+
+main form input,
+main form select,
+main form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px; /*Aumentar o espaço entre os elementos*/
+  font-family: "Corbel Black";
+  /*border: 0px; /*Retirar a borda entre cada um*/
+  /*border-bottom: 1px solid sienna;*/
+  outline: 0px; /*remover a borda quando se clica dentro dos elementos*/
+}
+
+main form input[type="tel"],
+main form select {
+  width: 49.6%;
+}
+
+main form textarea {
+  height: 250px;
+}
+
+main form input[type="submit"] {
+  /*position: relative;*/
+  margin-left: 38%;
+  /*margin-right: auto;*/
+  width: 20%;
+  background-color: rgb(172, 126, 42);
+  color: rgb(255, 255, 255);
+  border: 0px;
+  transition: ease 0.3s;
+}
+
+main form input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: rgb(241, 191, 125);
+  color: black;
+}
+
+/*======================== Fim do estilo contato ================== */
